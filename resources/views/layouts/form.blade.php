@@ -20,5 +20,23 @@
 
             <button type="submit">Submit</button>
         </form>
+
+        <div>
+            <h2>Messages:</h2>
+            @if($data)
+                <ul>
+                    @foreach($data as $item)
+                        <li>
+                            <strong>Name:</strong> {{ $item['name'] }}<br>
+                            <strong>Email:</strong> {{ $item['email'] }}<br>
+                            <strong>Message:</strong> {{ $item['message'] }}<br>
+                            <strong>Created at:</strong> {{ $item['created_at'] }}<br><br>
+                        </li>
+                    @endforeach
+                </ul>
+            @else
+                <p>No messages.</p>
+            @endif
+        </div>
     </body>
 </html>
