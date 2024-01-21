@@ -16,6 +16,9 @@
                     </div>
                     <div class="col-75">
                         <input type="text" id="name" name="name" placeholder="Your name..">
+                        @error('name')
+                            <span class="error">{{ $message }}</span>
+                        @enderror
                     </div>
                 </div>
                 <div class="row">
@@ -24,6 +27,9 @@
                     </div>
                     <div class="col-75">
                         <input type="email" id="email" name="email" placeholder="Your email..">
+                        @error('email')
+                            <span class="error">{{ $message }}</span>
+                        @enderror
                     </div>
                 </div>
                 <div class="row">
@@ -32,6 +38,9 @@
                     </div>
                     <div class="col-75">
                         <textarea id="message" name="message" placeholder="Write something.."></textarea>
+                        @error('message')
+                            <span class="error">{{ $message }}</span>
+                        @enderror
                     </div>
                 </div>
                 <br>

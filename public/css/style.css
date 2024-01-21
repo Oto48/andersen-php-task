@@ -67,6 +67,11 @@ input[type="submit"]:hover {
     }
 }
 
+.error {
+    font-size: 12px;
+    color: red;
+}
+
 .data {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
