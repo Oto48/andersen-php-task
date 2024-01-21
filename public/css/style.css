@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type="submit"] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.data {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.data td,
+.data th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.data tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.data tr:hover {
+    background-color: #ddd;
+}
+
+.data th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
