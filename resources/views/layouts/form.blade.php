@@ -68,5 +68,8 @@
                 @endforeach
             @endif
         </table>
+        @if(!count($data))
+            <p style="text-align:center;">There are no messages added</p>
+        @endif
     </body>
 </html>
