@@ -55,7 +55,7 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Message</th>
-                <th>Created at</th>
+                <th>Create date</th>
             </tr>
             @if($data)
                 @foreach($data as $item)
